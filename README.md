@@ -84,9 +84,10 @@ What import alias would you like configured? @/*
 <br/>
 <img width="240" alt="image" src="https://github.com/ParkMiram/ParkMiram/assets/125454927/8c67c573-6fde-4fda-8c2a-228bda8a2106">
 <br/>
++ **src**: 프로젝트 생성 당시 `Would you like to use `src/` directory? No / Yes`에서 Yes를 선택하면 자동으로 생성해 준다. (만들지 않아도 @/로 접근 가능하다.)
 + **app**: 코드 짤 폴더
 + **page.js**: 메인 페이지
-+ **layout.js**: 웹의 공통 구조를 정의해 각 페이지에서 재사용을 가능하게 하여, 중복을 줄일 수 있는 페이지
++ **layout.js**: 루트 레이아웃에 추가하는 모든 UI는 애플리케이션의 모든 페이지 에서 공유된다. (중복을 줄일 수 있음)
 + **public**: 이미지나 static 파일 보관하는 폴더
 + **api**: 서버 기능 만드는 폴더
 <br/>
