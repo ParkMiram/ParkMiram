@@ -97,17 +97,125 @@ What import alias would you like configured? @/*
 + **package.json**: 설치한 라이브러리 버전 기록하는 파일
 
 <br/>
-<br/>
-<br/>
-<br/>
+
+***
+
 <br/>
 
-> [!NOTE]
-> **다음 스터디 목표**
+## 'use client'
+> 서버와 클라이언트 코드 사이의 경계를 선언하는 데 사용된다. (동적으로 렌더링 된다, 정적인 사이트에선 사용❌)
+> 
+> 필요한 경우에만 렌더링을 사용함으로써, 서버의 부담을 줄이고 전체 애플리케이션의 성능을 최적화할 수 있다.
 >
->>1. 더 디테일한 파일 구조 (+ 예제 사진)
->>2. pages, layout 파일에 대한 더 자세한 설명 (+ 예제 코드)
->>3. 기타 등등.. 더 공부
+> ```
+> 'use client'
+> ```
+
+<br/>
+
+**사용 예시**
+1. 입력 폼 검증 : 사용자 입력이 특정 조건을 만족하는지 실시간으로 확인/피드백 제공
+2. 사용자 위치 기반 서비스 : 현재 위치를 기반으로 정보 제공
+3. 실시간 데이터 시각화 : (웹소켓 사용) 서버로부터 실시간으로 데이터를 받아 차트나 그래프를 동적으로 업데이트
+4. 클라이언트 측 암호화 : 사용자의 브라우저에서 데이터를 암호화하고 복호화하는 작업을 수행
+5. 게임 또는 애니메이션 : 사용자의 입력에 반응하여 실시간으로 변화하는 게임이나 애니메이션 구현
+
+<br/>
+
+**사용하지 않는 예시**
+1. 블로그 포스트 목록 : 서버에서 미리 렌더링 된 블로그 포스트 목록을 사용자에게 제공하여 빠른 페이지 로드
+2. 정적인 페이지 : 마케팅 랜딩 페이지, 제품 카탈로그, FAQ, 회사 정보 페이지
+
+<br/>
+
+***
+
+<br/>
+
+## 라우팅
+> 네트워크에서 경로를 선택
+
+![image](https://github.com/ParkMiram/ParkMiram/assets/125454927/ebd3bce0-fbb6-4534-984a-320abf2c59ec)
+![image](https://github.com/ParkMiram/ParkMiram/assets/125454927/81768d0d-e69c-45e6-877d-628c908429ad)
+
+<br/>
+
+> [!IMPORTANT]
+> 페이지 접근하기 위해선 폴더 안에 page.js 또는 route.js가 있어야 한다.
+
+<br/>
+
+**useRouter**
+<br/>
+: Next JS의 내장 훅 중 하나로, 라우팅을 관리하는 데 사용이 된다.
+<br/>
+현재 페이지의 URL, 경로, 쿼리 파라미터 등과 같은 정보에 쉽게 액세스할 수 있다.
+```
+import { useRouter } from 'next/navigation'
+
+export default function Page() {
+    const router = useRouter()
+
+    return (
+        <button type="button" onClick={() => router.push('/dashboard')}>
+            대시보드
+        </button>
+    )
+}
+```
+router.replace() 메서드를 사용하면 페이지를 교체하고 이전 페이지를 히스토리 스택에서 제거할 수 있다.
+
+<br/>
+
+***
+
+<br/>
+
+## Cookie
+1. 쿠키 이름으로 이름과 값이 있는 개체를 반환
+```
+import { cookies } from 'next/headers'
+ 
+export default function Page() {
+  const cookieStore = cookies()
+  const cookieName = cookieStore.get('name')
+  return '...'
+}
+```
+2. 모든 쿠키 목록 반환
+```
+import { cookies } from 'next/headers'
+ 
+export default function Page() {
+  const cookieStore = cookies()
+  return cookieStore.getAll().map((cookie) => (
+    <div key={cookie.name}>
+      <p>Name: {cookie.name}</p>
+      <p>Value: {cookie.value}</p>
+    </div>
+  ))
+}
+```
+3. 쿠키 존재 여부 확인 (boolean)
+```
+import { cookies } from 'next/headers'
+ 
+export default function Page() {
+  const cookieStore = cookies()
+  const hasCookie = cookieStore.has('name')
+  return '...'
+}
+```
+4. 쿠키 이름으로 삭제
+```
+'use server' // 서버 작업 표시
+ 
+import { cookies } from 'next/headers'
+ 
+async function delete(data) {
+  cookies().delete('name')
+}
+```
 
 
 <!--
