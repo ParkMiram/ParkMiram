@@ -14,6 +14,9 @@
 이전 회사에서 많은 것을 배우고 성장하였지만, 더 발전하고자 플레이데이터 백엔드 개발 부트캠프에 다녔습니다.<br/>
 또한 '같이 일하고 싶은 개발자'가 되기 위해, SQLD, 정보처리기사, AWS 등 필요한 자격증을 취득하여 실무 역량을 강화할 것입니다.<br/>
 
+[<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white">](https://positive-pan-53e.notion.site/121e345a00478043b406eea40ffaa2ff?pvs=4)
+<sup> <- 자격증 목표와 공부</sup>
+
 <hr/>
 
 <div align=left><h1>🛠️ Tech Stack</h1></div>
@@ -66,3 +69,7 @@
   <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white">
   <img src="https://img.shields.io/badge/WebStorm-000000?style=for-the-badge&logo=WebStorm&logoColor=white">
 </div>
+
+<hr/>
+
+🧐 현재 [자유롭게 커스텀 가능한 UI 컴포넌트](https://github.com/ParkMiram/FlexiComponents) 만드는 중 ...
