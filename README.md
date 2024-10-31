@@ -72,5 +72,3 @@
 </div>
 
 <hr/>
-
-🧐 현재 [자유롭게 커스텀 가능한 UI 컴포넌트](https://github.com/ParkMiram/FlexiComponents) 만드는 중 ...
