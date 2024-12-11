@@ -1,23 +1,4 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&fontColor=black&height=160&section=header&text=Welcome%20👋&fontSize=70&fontAlignX=50&fontAlignY=40)
-# 👩‍💻 Profile
-### 배움이 멈추지 않는 개발자
-> 🎂 생년월일 : 2000.09.07<br/>
-> 📧 이메일 : myurm@naver.com<br/>
-> 🎓 최종 학력 : 방송통신대학교 컴퓨터과학과 (2019.03 ~ 2024.02)<br/>
-> 💼 경력 : 3년 3개월 (2020.09 ~ 2023.10)<br/>
-> 🖥️ 담당 업무 : 웹디자이너&퍼블리셔, Front&Back 개발자<br/>
-> 📖 교육 이력 : PlayData 백엔드 개발 부트캠프 5기 (2024.02 ~ 2024.08)
-
-#### 개발자로서 목표하는 성장과 노력
-안녕하세요! 웹디자이너와 퍼블리셔로 시작하여 <ins>개발자</ins>로 전향한 박미람입니다.<br/>
-새로운 것을 도전하고 배우는 것을 좋아하는 저의 목표는 <b>풀스택 개발자</b>입니다.<br/>
-이전 회사에서 많은 것을 배우고 성장하였지만, 더 발전하고자 플레이데이터 백엔드 개발 부트캠프에 다녔습니다.<br/>
-또한 '같이 일하고 싶은 개발자'가 되기 위해, SQLD, 정보처리기사, AWS 등 필요한 자격증을 취득하여 실무 역량을 강화할 것입니다.<br/>
-
-[<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white">](https://positive-pan-53e.notion.site/121e345a00478043b406eea40ffaa2ff?pvs=4)
-<sup> <- 자격증 목표와 공부</sup>
-
-<hr/>
 
 <div align=left><h1>🛠️ Tech Stack</h1></div>
 <div align=left>
